@@ -1,15 +1,15 @@
-if (localStorage.getItem("username") === null) {
+if (localStorage.getItem("ETK03.FirstIdle.Save") === null) {
 var Coins = 0;
 var SaveTicks = 0;
 var Farm = 0;
 var Cup = 2;
 var CPC = 1;
+} else {
+Load();
 }
 function CoinsClick(number){
     Coins = Coins + number;
     document.getElementById("Coins").innerHTML = Coins;
-} else {
-Load();
 }
 
 
@@ -47,14 +47,14 @@ function Save(){
     Cup: Cup
     };
     
-  localStorage.setItem("save",JSON.stringify(save));
+  localStorage.setItem("ETK03.FirstIdle.Save",JSON.stringify(save));
   
 }
 
 
 //load
 function Load(){
-  var savegame = JSON.parse(localStorage.getItem("save"));
+  var savegame = JSON.parse(localStorage.getItem("ETK03.FirstIdle.Save"));
   if (typeof savegame.Coins !== "undefined") Coins = savegame.Coins;
   document.getElementById("Coins").innerHTML = Coins;
   if (typeof savegame.Farm !== "undefined") Farm = savegame.Farm;
@@ -70,14 +70,14 @@ function Load(){
 
 //delete player's save
 function DeleteSave() {
-  localStorage.removeItem("save");
+  localStorage.removeItem("ETK03.FirstIdle.Save");
   document.location.reload();        //reloads the page so it doesn't save over again.
 }
 
 //Exports The player's save
 function ExportSave() {
   save();
-  var SaveString = new localStorage.getItem("save");
+  var SaveString = new localStorage.getItem("ETK03.FirstIdle.Save");
   document.getElementById("SaveString").innerHTML = SaveString;
 }
 
