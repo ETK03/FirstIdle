@@ -63,7 +63,7 @@ function Load(){
   var nextFarmCost = Math.floor(10 * Math.pow(1.1,Farm));       //works out the cost of the next Farm
     document.getElementById('FarmCost').innerHTML = nextFarmCost;  //updates the Farm cost for the user
   if (typeof savegame.CPC !== "undefined") CPC = savegame.CPC;
-  document.getElementById("CPU").innerHTML = CPU;
+  document.getElementById("CPC").innerHTML = CPC;
   if (typeof savegame.Cup !== "undefined") Cup = savegame.Cup;
   document.getElementById("Cup").innerHTML = Cup;
   
