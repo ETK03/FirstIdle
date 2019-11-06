@@ -1,9 +1,10 @@
-if (localStorage.getItem("ETK03.FirstIdle.Save") === null) {
 var Coins = 0;
 var SaveTicks = 0;
 var Farm = 0;
 var Cup = 2;
 var CPC = 1;
+if (localStorage.getItem("ETK03.FirstIdle.Save") === null) {
+var Status = "Welcome To My Un-named Idle Game!";
 } else {
 Load();
 }
