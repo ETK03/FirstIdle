@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="interface.css" />
+	</head>
+	<body>
+	  
+		<button onclick="CoinsClick(CPC)">Beg For Coins</button>
+		<br />
+		Coins: <span id="Coins">0</span>
+		<br />
+		
+		<button onclick="buyCup()">Buy Cup Upgrade</button>
+		<br />
+		Cup Upgrade Cost: <span id="CupCost">100</span>
+		<br />
+		
+		<button onclick="buyFarm()">Buy Farm</button>
+		<br />
+		Farms: <span id="Farm">0</span>
+		<br />
+		Farm Cost: <span id="FarmCost">10</span>
+		<br />
+		
+		<button onclick="Save()">Save The Game</button>
+		<button onclick="Load()">Load Your Save</button>
+		<button onclick="DeleteSave()">Delete Your Save(Restart With Nothing)</button>
+		<br />
+		<button onclick="ExportSave()">Export Save</button>
+		<br />
+		String: <span id="SaveString">undefined</span>
+		<br />
+		
+		<script type="text/javascript" src="main.js"></script>
+	</body>
+</html>
