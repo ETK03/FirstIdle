@@ -1,12 +1,15 @@
+if (localStorage.getItem("username") === null) {
 var Coins = 0;
 var SaveTicks = 0;
 var Farm = 0;
 var Cup = 2;
 var CPC = 1;
-Load();
+}
 function CoinsClick(number){
     Coins = Coins + number;
     document.getElementById("Coins").innerHTML = Coins;
+} else {
+Load();
 }
 
 
