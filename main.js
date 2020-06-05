@@ -66,7 +66,7 @@ function Load(){
   if (typeof savegame.CPC !== "undefined") CPC = savegame.CPC;
   document.getElementById("CPC").innerHTML = CPC;
   if (typeof savegame.Cup !== "undefined") Cup = savegame.Cup;
-  document.getElementById("Cup").innerHTML = Cup;
+  //document.getElementById("Cup").innerHTML = Cup;
   
 }
 
