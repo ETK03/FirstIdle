@@ -79,8 +79,7 @@ function DeleteSave() {
 //Exports The player's save
 function ExportSave() {
   Save();
-  var SaveString = new localStorage.getItem("ETK03.FirstIdle.Save");
-  document.getElementById("SaveString").innerHTML = SaveString;
+   document.getElementById("SaveString").innerHTML = localStorage.getItem("ETK03.FirstIdle.Save");
 }
 
 
