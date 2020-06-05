@@ -33,7 +33,7 @@ function buyCup(){
         Cup = Cup + 1;
         CPC = CPC * 3;                                   //increases number of Farm
     	Coins = Coins - CupCost;                          //removes the Coins spent
-        document.getElementById('Cup').innerHTML = Cup;  //updates the number of Farm for the user
+        document.getElementById('CPC').innerHTML = CPC;  //updates the number of CPC
         document.getElementById('Coins').innerHTML = Coins;  //updates the number of Coins for the user
     }
     var nextCupCost = Math.floor(Math.pow(10,Cup));       //works out the cost of the next Farm
