@@ -1,0 +1,3 @@
+# FirstIdle
+My first game, an incremental.
+Not sure where I'm going with this...
