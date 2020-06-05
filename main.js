@@ -8,6 +8,7 @@ var Status = "Welcome To My Un-named Idle Game!";
 } else {
 Load();
 }
+
 function CoinsClick(number){
     Coins = Coins + number;
     document.getElementById("Coins").innerHTML = Coins;
@@ -77,7 +78,7 @@ function DeleteSave() {
 
 //Exports The player's save
 function ExportSave() {
-  save();
+  Save();
   var SaveString = new localStorage.getItem("ETK03.FirstIdle.Save");
   document.getElementById("SaveString").innerHTML = SaveString;
 }
